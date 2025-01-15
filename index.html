@@ -4,8 +4,18 @@
     <meta charset="UTF-8">
     <title>Work In Progress</title>
 </head>
-<body>
-    <h1>Work in Progress!</h1>
-    <p>Unfinished.</p>
+<body style="background-color:white;">
+    <h1 style="color:black;" id="heading1">Work in Progress!</h1>
+    <p id="textical">Unfinished.</p>
+    
+    <button onclick="changebccolor()">darkmode</button>
+    
+    <script>
+        function changebccolor() {
+        	document.body.style="background-color:black;";
+        	document.getElementById('heading1').style.color = 'white'
+        	document.getElementById('textical').style.color = 'white'
+        }	
+    </script>
 </body>
 </html>
