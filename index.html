@@ -8,14 +8,26 @@
     <h1 style="color:black;" id="heading1">Work in Progress!</h1>
     <p id="textical">Unfinished.</p>
     
-    <button onclick="changebccolor()">darkmode</button>
+    <button  value="darkmode" id="button" onclick="darkmodeon()">Darkmode</button>
     
     <script>
-        function changebccolor() {
+        function darkmodeon() {
         	document.body.style="background-color:black;";
         	document.getElementById('heading1').style.color = 'white'
         	document.getElementById('textical').style.color = 'white'
+        	document.getElementById('button').onclick = lightmodeon
+        	document.getElementById('button').innerText = 'lightmode'
         }	
     </script>
+    
+    <script>
+        function lightmodeon(){
+          document.body.style="background-color:white;";
+        	document.getElementById('heading1').style.color = 'black'
+        	document.getElementById('textical').style.color = 'black'
+        	document.getElementById('button').style.onclick = darkmodeon
+      	}
+    </script>
+    
 </body>
 </html>
