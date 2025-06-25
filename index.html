@@ -1,33 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Work In Progress</title>
-</head>
-<body style="background-color:white;">
-    <h1 style="color:black;" id="heading1">Work in Progress!</h1>
-    <p id="textical">Unfinished.</p>
-    
-    <button  value="darkmode" id="button" onclick="darkmodeon()">Darkmode</button>
-    
-    <script>
-        function darkmodeon() {
-        	document.body.style="background-color:black;";
-        	document.getElementById('heading1').style.color = 'white'
-        	document.getElementById('textical').style.color = 'white'
-        	document.getElementById('button').onclick = lightmodeon
-        	document.getElementById('button').innerText = 'lightmode'
-        }	
-    </script>
-    
-    <script>
-        function lightmodeon(){
-          document.body.style="background-color:white;";
-        	document.getElementById('heading1').style.color = 'black'
-        	document.getElementById('textical').style.color = 'black'
-        	document.getElementById('button').onclick = darkmodeon
-      	}
-    </script>
-    <h1 style="color:white;" id="randomthingtomakesidetoside">____________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________</h1>
-</body>
+<html>
+  <body id="sigma">
+    <style>
+      #sigma {
+        background-image: repeating-conic-gradient(red 10%, yellow 20%);
+        border-radius: 50%;
+      }
+    </style>
+  </body>
 </html>
